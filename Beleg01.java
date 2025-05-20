@@ -12,7 +12,17 @@ public class Beleg01 {
 		
 		String eingabe = scanner.nextLine();
 		
-		System.out.println(eingabe);
+		if (eingabe.length() <= 80) {
+			
+			System.out.println(eingabe);
+			
+		}
+		else {
+			
+			System.out.println("ERROR");
+			
+		}
+		
 		
 	}
 
