@@ -2,7 +2,7 @@ package Beleg02;
 
 public interface IProdukt {
 	
-	public String getPreis();
+	public int getPreis();
 	
 	int getHerstellungsdauer();
 	

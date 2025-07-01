@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Randomizer {
 	
-	public static int getRndmPreis(Produkte art) throws Exception {
+	public static int getRndmPreis(Produkte art){
 		
 		Random zufall = new Random();
 		
@@ -22,11 +22,12 @@ public class Randomizer {
 			
 		return zufall.nextInt(6)+5;
 		}
+		return -1;
 		
-		throw new Exception();
+	
 		}
 		
-	public static int getRndmHerstellungsdauer(Produkte art) throws Exception
+	public static int getRndmHerstellungsdauer(Produkte art)
 	{
 		Random zufall = new Random();
 		
@@ -44,7 +45,7 @@ public class Randomizer {
 		
 		return zufall.nextInt(6)+7;
 		}
-		return 0;
+		return -1;
 		
 	}
 
